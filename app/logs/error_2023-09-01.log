@@ -1,0 +1,29 @@
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"user-service"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":"serverw is not defined","service":"auto"}
+{"level":"error","message":{"brand":"Infinix","category":"laptops","description":"Infinix Inbook X1 Ci3 10th 8GB...","discountPercentage":11.83,"id":9,"images":["https://i.dummyjson.com/data/products/9/1.jpg","https://i.dummyjson.com/data/products/9/2.png","https://i.dummyjson.com/data/products/9/3.png","https://i.dummyjson.com/data/products/9/4.jpg","https://i.dummyjson.com/data/products/9/thumbnail.jpg"],"price":1099,"rating":4.54,"stock":96,"thumbnail":"https://i.dummyjson.com/data/products/9/thumbnail.jpg","title":"Infinix INBOOK"}}
+{"level":"error","message":"coreRouter is not a function"}
+{"level":"error","message":"router is not defined"}
+{"level":"error","message":"error is not defined"}
+{"level":"error","message":"The argument 'options' must have the property \"port\" or \"path\". Received { default: 100 }"}
+{"level":"error","message":"Listen method has been called more than once without closing."}
+{"level":"error","message":"Cannot create property 'Symbol(level)' on string 'Initiating server listening to port 8901'"}
+{"level":"error","message":"Cannot create property 'Symbol(level)' on string 'Initiating server listening to port 8901'"}
+{"level":"error","message":"Initiating server listening to port 8901"}
+{"level":"error","message":"Initiating routes"}
