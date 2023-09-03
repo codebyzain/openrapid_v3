@@ -1,0 +1,1 @@
+Non Js file should get ignored if this was placed inside the controllers folder

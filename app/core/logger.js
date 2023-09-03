@@ -8,30 +8,21 @@ const logger = winston.createLogger({
         //
         // - Write all logs with importance level of `error` or less to `error.log`
         // - Write all logs with importance level of `info` or less to `combined.log`
-        //
+        // catch all the errors
         new winston.transports.File({ dirname: "app/logs", filename: `error_${moment().format("YYYY-MM-DD")}.log`, level: "error" }),
-        new winston.transports.File({ dirname: "app/logs", filename: `combined_${moment().format("YYYY-MM-DD")}.log` }),
+        // If you want to get all the logs uncomment this line below, note that this good only for development
+        // new winston.transports.File({ dirname: "app/logs", filename: `combined_${moment().format("YYYY-MM-DD")}.log` }),
     ],
 });
 
-//
 if (process.env.MODE !== "PRODUCTION") {
     logger.add(
         new winston.transports.Console({
-            format: winston.format.combine(
-                winston.format.combine(
-                    winston.format.prettyPrint({
-                        colorize: true,
-                        depth: 10,
-                    }),
-                    winston.format.colorize()
-                ),
-                winston.format.colorize()
-            ),
+            format: winston.format.cli({
+                colorize: true,
+                depth: 3,
+            }),
             colorize: true,
-            timestamp: function () {
-                return new Date().toLocaleTimeString();
-            },
             prettyPrint: true,
         })
     );
