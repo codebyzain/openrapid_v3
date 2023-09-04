@@ -74,6 +74,7 @@ var produceClassArguments = (repositories, req, res, next = null) => {
             query: req.params,
             query: req.query,
             body: req.body,
+            params: req.params,
             middleware: res.locals.data,
             files: req.files,
             headers: req.headers,
