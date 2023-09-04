@@ -136,7 +136,7 @@ const Router = async (xRouter, xDatabaseConnection) => {
 
             // Running middleware
             // Loops through each middleware (if found) in the controllers $middleware variable
-            if (classMiddlewares.length > 0) {
+            if (classMiddlewares !== undefined && classMiddlewares.length > 0) {
                 for (var midWare of classMiddlewares) {
                     const midClass = new require(midWare);
                     xRouter[runClassMethod](runClassRoute, (req, res, next) => midClass(produceClassArguments(repositories, req, res, next)));
