@@ -42,7 +42,7 @@ class Repository {
                 conn.release();
                 return rows;
             } catch (e) {
-                log(e.message, "red");
+                logger.error(e.message, "red");
                 return false;
             }
         } else {
