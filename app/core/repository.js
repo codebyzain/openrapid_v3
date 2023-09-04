@@ -16,7 +16,9 @@ class Repository {
             try {
                 const conn = await this.databaseConnection;
                 const [rows, fields] = await conn.execute(string);
-                logger.info(`Database: Running query ${string.green}`);
+                if (process.env.MODE == "DEVELOPMENT" && process.env.DATABASE_LOG == "true") {
+                    logger.info(`Database: Running query ${string.green}`);
+                }
                 conn.release();
                 return rows;
             } catch (e) {
@@ -34,7 +36,9 @@ class Repository {
             try {
                 const conn = await this.databaseConnection;
                 const [rows] = await conn.execute(str);
-                logger.info(`Database: Running query ${str.green}`);
+                if (process.env.MODE == "DEVELOPMENT" && process.env.DATABASE_LOG == "true") {
+                    logger.info(`Database: Running query ${str.green}`);
+                }
                 conn.release();
                 return rows;
             } catch (e) {
