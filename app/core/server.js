@@ -13,8 +13,8 @@ const coreRouter = require("@core/router");
 const logger = require("./logger");
 const { morganConfig } = require("@core/config");
 
-module.exports.init = (params, databaseConnection) => {
-    logger.info(`Server: Initializing server port ${params.port}`);
+module.exports.init = (port, databaseConnection) => {
+    logger.info(`Server: Initializing server port ${port}`);
     // Initiate the express
     const app = express();
     // adding morgan to log HTTP requests
