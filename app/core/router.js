@@ -50,8 +50,7 @@ const runController = async (cClass, repositories, req, res) => {
 
 // Generate route name automatically
 var generateAutoRouteName = (controllerPath) => {
-    var routeNameLastIndexPath = controllerPath.lastIndexOf("/");
-    var routeName = controllerPath.substr(routeNameLastIndexPath).replace(".js", "").replace("_", "/");
+    var routeName = controllerPath.replace("app/controllers", "").replace(".js", "").replace(/\_/g, "/");
     return routeName;
 };
 

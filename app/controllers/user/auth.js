@@ -5,9 +5,10 @@ module.exports = class UserAuthController extends require("@controller") {
 
     // # Route: Optional, Default: autogeneration from filename
     // if the method variable is not defined filename will be its route by transforming "_" to "/"
-    // so if you have your filename as user_auth and you did not define the route varialbe you can
-    // access this controller via /user/auth
-    $route = "/auth/login";
+    // So you can access this endpoint in /user/auth
+    // otherwise if you  define the route varialbe like below :
+    // $route = "/user/login";
+    // you can access this controller via /user/login
 
     // or if you want to assign multiple route to this same controller like below
     // $route = ["/auth/login", "/login"];
