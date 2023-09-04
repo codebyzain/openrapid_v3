@@ -9,3 +9,12 @@ A lightweight NodeJS REST API framework with auto-route generation on top of bel
 4. Beautiful logs including response time logging
 5. Built-in compression for faster response
 6. Start your first endpoint in just seconds
+
+
+### usage
+1. npm i
+2. nodemon start or pm2 start
+
+#### Troubleshooting
+
+If something happened or theres is an error. try to run npm i first then nodemon start
